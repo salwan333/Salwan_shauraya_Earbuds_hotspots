@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Earbud Hotspot Showcase</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Interactive Earbud Model Viewer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="css/main.css" rel="stylesheet"/>
+    <link type="text/css" href="css/header-footer.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <h1>My Earbud Website</h1>
+    </header>
+
+    <model-viewer id="model" src="model/single_earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="2" shadow-softness="1">
+
+      <button class="Hotspot" slot="hotspot-1" data-position="346.7985676961607m 52.945219920638436m 111.29636599991957m" data-normal="0.2521640715799748m -0.019515996227398125m -0.9674876779036836m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-1"></div>
+      </button>
+
+      <button class="Hotspot" slot="hotspot-2" data-position="353.96000952957655m 199.0677404919494m 195.14984376449019m" data-normal="0.010978160817056184m 0.0019181674764461496m 0.9999378983809982m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-2"></div>
+      </button>
+
+      <button class="Hotspot" slot="hotspot-3" data-position="212.44988872514864m 355.2378444613152m 99.13858065050783m" data-normal="-0.4093347922669478m 0.06792117565229526m -0.9098525934115839m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-3">silicon ear tips for extra comfort</div>
+      </button>
+
+      <button class="Hotspot" slot="hotspot-4" data-position="297.85582634445484m 343.2886375020198m 194.57409257690034m" data-normal="-0.03335576068484142m 0.0190845712121774m -0.9992613133564128m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation" id="hotspot-4">50MM bass drivers</div>
+      </button>
+
+      <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
+
+      <button slot="ar-button" id="ar-button">
+        View in your space
+      </button>
+
+      <div id="ar-prompt">
+        <img src="ar_hand_prompt.png">
+      </div>
+
+    </model-viewer>
+
+    <footer>
+      <p>&copy;  My Earbud Website</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
